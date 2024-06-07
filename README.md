@@ -13,6 +13,10 @@ WavePlayerView is an advanced library for real-time sound analysis by recording 
 - **Wide Compatibility**: Supports Android API level 21 and above.
 - **Advanced Controls**: Control playback speed, pause/resume functionality, and monitor audio progress.
 
+## Screenshot
+
+- 
+
 ## Why Use WavePlayerView?
 
 - **High Performance**: Engineered for high efficiency with minimal impact on your application's performance.
