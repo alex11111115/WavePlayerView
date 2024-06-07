@@ -54,7 +54,7 @@ Add `WavePlayerView` to your activity layout file `activity_main.xml`:
 
 In your `MainActivity.java` file, you can control the `WavePlayerView` as follows:
 
-//Initialization first
+Initialization first
 ```java
 private WavePlayerView waveView;
 waveView = findViewById(R.id.waveView);
@@ -223,7 +223,6 @@ We welcome contributions from the community! If you have ideas or improvements, 
 ## License
 
 WavePlayerView is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
-```
 
 ### Explanation of Sections:
 - **Introduction**: Provides a brief description of the library and its standout features.
