@@ -1,4 +1,6 @@
 
+[![StandWithPalestine](https://raw.githubusercontent.com/karim-eg/StandWithPalestine/main/assets/palestine_badge.svg)](https://github.com/karim-eg/StandWithPalestine)
+
 # WavePlayerView
 
 WavePlayerView is an advanced library for real-time sound analysis by recording sound and instantly plotting waves based on frequencies. But that's not all! You can also visualize waves from an audio file or a track within your application.
