@@ -10,48 +10,39 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 34
+        namespace "sound.wave.kilobyte"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    
-    vectorDrawables {
-            useSupportLibrary = true
-        }
-}
-
-compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.10.1'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "androidx.core:core-ktx:1.10.1"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "com.google.android.material:material:1.9.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
 }
 
 publishing {
     publications {
         release(MavenPublication) {
-            from components.release
             groupId = 'sound.wave.kilobyte'
             artifactId = 'WavePlayerView'
             version = '1.0'
 
             pom {
                 name = 'WavePlayerView'
-                description = 'A Java library for analyzing sound directly by recording sound and plotting waves according to frequencies instantly. \n Do you think that's the only thing!? No, on the contrary, there is also a drawing of waves according to an audio file from a track or from a file within the application.'
+                description = 'A Java library for analyzing sound directly by recording sound and plotting waves according to frequencies instantly. Do you think that\'s the only thing! No, on the contrary, there is also a drawing of waves according to an audio file from a track or from a file within the application.'
                 url = 'https://github.com/alex11111115/WavePlayerView'
                 licenses {
                     license {

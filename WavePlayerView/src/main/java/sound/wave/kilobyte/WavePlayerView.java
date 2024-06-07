@@ -1,5 +1,6 @@
 package sound.wave.kilobyte;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -14,11 +15,11 @@ import android.media.audiofx.Visualizer;
 import android.os.Build;
 import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.Looper;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import java.io.IOException;
-import android.animation.ValueAnimator;
 
 public class WavePlayerView extends View {
 		private Paint[] paints;
@@ -77,7 +78,7 @@ public class WavePlayerView extends View {
 				magnitudes = new float[2][];
 				a.recycle();
 				
-				handler = new Handler();
+				handler = new Handler(Looper.getMainLooper());
 				handlerThread = new HandlerThread("VisualizerThread");
 				handlerThread.start();
 				backgroundHandler = new Handler(handlerThread.getLooper());
