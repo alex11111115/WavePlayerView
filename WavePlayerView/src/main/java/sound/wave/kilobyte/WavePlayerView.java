@@ -430,9 +430,9 @@ public class WavePlayerView extends View {
 						audioRecord = null;
 				}
 		}
-		@Override
+		//@Override
 		public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-				super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+				//super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 				switch (requestCode) {
 						case REQUEST_RECORD_AUDIO_PERMISSION:
 						permissionToRecordAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
