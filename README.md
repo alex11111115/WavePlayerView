@@ -205,7 +205,7 @@ if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) !=
 }
 ```
 
-//Don't forget to put this in "onDestroy" as follows
+Don't forget to put this in "onDestroy" as follows
 ```java
 if (waveView != null) {
   waveView.release();
@@ -223,13 +223,3 @@ We welcome contributions from the community! If you have ideas or improvements, 
 ## License
 
 WavePlayerView is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
-
-### Explanation of Sections:
-- **Introduction**: Provides a brief description of the library and its standout features.
-- **Features**: Lists the main features of the library.
-- **Why Use WavePlayerView?**: Highlights the reasons to choose this library.
-- **How to Use the Library?**: Step-by-step guide on adding the library to a project and using it.
-- **Permissions**: Details the necessary permissions and how to request them.
-- **Credits**: Acknowledges the developer or maintainers of the library.
-- **Contribution**: Encourages community involvement and contributions.
-- **License**: Specifies the license under which the library is distributed.
