@@ -13,18 +13,30 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.MediaStore;
+<<<<<<< HEAD
 import android.widget.EditText;
 import android.widget.SeekBar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
+=======
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.TextView;
+>>>>>>> origin/main
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+<<<<<<< HEAD
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.core.content.ContextCompat;
+=======
+import androidx.core.content.ContextCompat;
+import java.io.IOException;
+>>>>>>> origin/main
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 		private Handler handler = new Handler(Looper.getMainLooper());
 		private String file = "";
 		private double value = 0;
+<<<<<<< HEAD
 		private String playbackSpeed = "1.0";
 		
 		private WavePlayerView waveView;
@@ -39,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
 		private MaterialTextView currentTimeTextView;
 		private SeekBar progressBar;
 		private MaterialTextView durationTextView;
+=======
+		private String s = "";
+		
+		private WavePlayerView waveView;
+		private EditText edittext1;
+		private TextView currentTimeTextView;
+		private SeekBar progressbar1;
+		private TextView durationTextView;
+>>>>>>> origin/main
 		
 		private ActivityResultLauncher<Intent> activityResultLauncher;
 		
@@ -52,10 +74,15 @@ public class MainActivity extends AppCompatActivity {
 		}
 		
 		private void requestPermissions() {
+<<<<<<< HEAD
 				if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
 						ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1000);
 				} else if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
 						ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, 9653);
+=======
+				if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
+						ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1000);
+>>>>>>> origin/main
 				} else {
 						initializeLogic();
 				}
@@ -66,13 +93,17 @@ public class MainActivity extends AppCompatActivity {
 				super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 				if (requestCode == 1000 && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 						initializeLogic();
+<<<<<<< HEAD
 				} else if (requestCode == 9653 && grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 						initializeLogic();
+=======
+>>>>>>> origin/main
 				}
 		}
 		
 		private void initialize() {
 				waveView = findViewById(R.id.waveView);
+<<<<<<< HEAD
 				filePathEditText = findViewById(R.id.edittext1);
 				currentTimeTextView = findViewById(R.id.currentTimeTextView);
 				progressBar = findViewById(R.id.progressbar1);
@@ -124,6 +155,55 @@ public class MainActivity extends AppCompatActivity {
 				updateWavePropertiesButton.setOnClickListener(view -> updateWaveProperties());
 				
 				progressBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+=======
+				edittext1 = findViewById(R.id.edittext1);
+				currentTimeTextView = findViewById(R.id.currentTimeTextView);
+				progressbar1 = findViewById(R.id.progressbar1);
+				durationTextView = findViewById(R.id.durationTextView);
+				
+				Button button2 = findViewById(R.id.button2);
+				button2.setOnClickListener(view -> waveView.startListening());
+				
+				Button button3 = findViewById(R.id.button3);
+				button3.setOnClickListener(view -> waveView.stopListening());
+				
+				Button pick = findViewById(R.id.pick);
+				pick.setOnClickListener(view -> {
+						Intent w = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+						w.setType("audio/*");
+						w.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, false);
+						activityResultLauncher.launch(w);
+				});
+				
+				Button play_with_file_path = findViewById(R.id.play_with_file_path);
+				play_with_file_path.setOnClickListener(view -> playAudioFromFile());
+				
+				Button play_from_app = findViewById(R.id.play_from_app);
+				play_from_app.setOnClickListener(view -> playAudioFromApp());
+				
+				Button stop = findViewById(R.id.stop);
+				stop.setOnClickListener(view -> stopAudio());
+				
+				Button resume = findViewById(R.id.resume);
+				resume.setOnClickListener(view -> {
+						waveView.resumeAudioWithWave();
+						waveView.setPlaybackSpeed(s);
+				});
+				
+				Button pause = findViewById(R.id.pause);
+				pause.setOnClickListener(view -> waveView.pauseAudioWithWave());
+				
+				Button button4 = findViewById(R.id.button4);
+				button4.setOnClickListener(view -> {
+						s = ((EditText) findViewById(R.id.edittext7)).getText().toString();
+						waveView.setPlaybackSpeed(s);
+				});
+				
+				Button update = findViewById(R.id.update);
+				update.setOnClickListener(view -> updateWaveProperties());
+				
+				progressbar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+>>>>>>> origin/main
 						@Override
 						public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 								value = progress;
@@ -137,6 +217,7 @@ public class MainActivity extends AppCompatActivity {
 						@Override
 						public void onStopTrackingTouch(SeekBar seekBar) {
 								waveView.seekToPosition((int) value);
+<<<<<<< HEAD
 								waveView.setPlaybackSpeed(playbackSpeed);
 						}
 				});
@@ -146,6 +227,17 @@ public class MainActivity extends AppCompatActivity {
 				
 				MaterialButton showWave2Button = findViewById(R.id.show_wave2);
 				showWave2Button.setOnClickListener(view -> waveView.setWave2Visible(true));
+=======
+								waveView.setPlaybackSpeed(s);
+						}
+				});
+				
+				Button hide_wave2 = findViewById(R.id.hide_wave2);
+				hide_wave2.setOnClickListener(view -> waveView.setWave2Visible(false));
+				
+				Button show_wave2 = findViewById(R.id.show_wave2);
+				show_wave2.setOnClickListener(view -> waveView.setWave2Visible(true));
+>>>>>>> origin/main
 				
 				activityResultLauncher = registerForActivityResult(
 				new ActivityResultContracts.StartActivityForResult(),
@@ -162,7 +254,11 @@ public class MainActivity extends AppCompatActivity {
 										filePaths.add(FileUtil.convertUriToFilePath(getApplicationContext(), data.getData()));
 								}
 								if (!filePaths.isEmpty()) {
+<<<<<<< HEAD
 										filePathEditText.setText(filePaths.get(0));
+=======
+										edittext1.setText(filePaths.get(0));
+>>>>>>> origin/main
 								}
 						}
 				}
@@ -170,8 +266,13 @@ public class MainActivity extends AppCompatActivity {
 		}
 		
 		private void initializeLogic() {
+<<<<<<< HEAD
 				waveView.setOnAudioCompleteListener(() -> progressBar.setProgress(0));
 				playbackSpeed = "1.0";
+=======
+				waveView.setOnAudioCompleteListener(() -> progressbar1.setProgress(0));
+				s = "1.0";
+>>>>>>> origin/main
 		}
 		
 		private void playAudioFromFile() {
@@ -181,15 +282,23 @@ public class MainActivity extends AppCompatActivity {
 						waveView.setOnAudioProgressListener(currentTime -> {
 								String currentTimeStr = formatMilliseconds(currentTime);
 								currentTimeTextView.setText(currentTimeStr);
+<<<<<<< HEAD
 								progressBar.setProgress(currentTime);
 						});
 						
 						file = filePathEditText.getText().toString();
+=======
+								progressbar1.setProgress((int) currentTime);
+						});
+						
+						file = edittext1.getText().toString();
+>>>>>>> origin/main
 						waveView.playAudioWithWaveFromPath(file);
 						handler.postDelayed(() -> {
 								int duration = waveView.getAudioDuration();
 								String durationStr = formatMilliseconds(duration);
 								durationTextView.setText(durationStr);
+<<<<<<< HEAD
 								progressBar.setMax(duration);
 						}, 50);
 						
@@ -197,6 +306,15 @@ public class MainActivity extends AppCompatActivity {
 								waveView.setPlaybackSpeed(playbackSpeed);
 						} catch (IllegalArgumentException e) {
 								e.printStackTrace();
+=======
+								progressbar1.setMax((int) duration);
+						}, 50);
+						
+						try{
+								waveView.setPlaybackSpeed(s);
+						}catch(IllegalArgumentException e){
+								e.getStackTrace();  
+>>>>>>> origin/main
 						}
 				}
 		}
@@ -208,7 +326,11 @@ public class MainActivity extends AppCompatActivity {
 						waveView.setOnAudioProgressListener(currentTime -> {
 								String currentTimeStr = formatMilliseconds(currentTime);
 								currentTimeTextView.setText(currentTimeStr);
+<<<<<<< HEAD
 								progressBar.setProgress(currentTime);
+=======
+								progressbar1.setProgress((int) currentTime);
+>>>>>>> origin/main
 						});
 						
 						waveView.playAudioWithWave(R.raw.mus);
@@ -216,14 +338,22 @@ public class MainActivity extends AppCompatActivity {
 								int duration = waveView.getAudioDuration();
 								String durationStr = formatMilliseconds(duration);
 								durationTextView.setText(durationStr);
+<<<<<<< HEAD
 								progressBar.setMax(duration);
 						}, 1000);
 						
 						waveView.setPlaybackSpeed(playbackSpeed);
+=======
+								progressbar1.setMax((int) duration);
+						}, 1000);
+						
+						waveView.setPlaybackSpeed(s);
+>>>>>>> origin/main
 				}
 		}
 		
 		private void updateWaveProperties() {
+<<<<<<< HEAD
 				if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
 						ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, 9653);
 				} else {
@@ -245,17 +375,41 @@ public class MainActivity extends AppCompatActivity {
 								} catch (IllegalArgumentException e) {
 										e.printStackTrace();
 								}
+=======
+				String editText2Value = ((EditText) findViewById(R.id.edittext2)).getText().toString();
+				String editText3Value = ((EditText) findViewById(R.id.edittext3)).getText().toString();
+				String editText4Value = ((EditText) findViewById(R.id.edittext4)).getText().toString();
+				String editText5Value = ((EditText) findViewById(R.id.edittext5)).getText().toString();
+				String editText6Value = ((EditText) findViewById(R.id.edittext6)).getText().toString();
+				
+				if (!(editText2Value.isEmpty() && editText3Value.isEmpty() && editText4Value.isEmpty() && editText5Value.isEmpty() && editText6Value.isEmpty())) {
+						try {
+								int color1 = Color.parseColor(editText2Value);
+								float wave1Width = Float.parseFloat(editText3Value);
+								int color2 = Color.parseColor(editText4Value);
+								float wave2Width = Float.parseFloat(editText5Value);
+								float waveSpeed = Float.parseFloat(editText6Value);
+								
+								waveView.setWaveProperties(color1, wave1Width, color2, wave2Width, waveSpeed);
+						} catch (IllegalArgumentException e) {
+								e.printStackTrace();
+>>>>>>> origin/main
 						}
 				}
 		}
 		
 		private void stopAudio() {
+<<<<<<< HEAD
 				if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
 						ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, 9653);
 				} else {
 						if (waveView != null) {
 								waveView.stopAudioWithWave();
 						}
+=======
+				if (waveView != null) {
+						waveView.stopAudioWithWave();
+>>>>>>> origin/main
 				}
 		}
 		
@@ -284,7 +438,11 @@ public class MainActivity extends AppCompatActivity {
 						if (uri == null) {
 								return null;
 						}
+<<<<<<< HEAD
 						
+=======
+            
+>>>>>>> origin/main
 						if ("content".equalsIgnoreCase(uri.getScheme())) {
 								String[] projection = {MediaStore.Audio.Media.DATA};
 								try (Cursor cursor = context.getContentResolver().query(uri, projection, null, null, null)) {
@@ -301,4 +459,8 @@ public class MainActivity extends AppCompatActivity {
 						return null;
 				}
 		}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

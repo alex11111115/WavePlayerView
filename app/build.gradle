@@ -1,7 +1,10 @@
 
 plugins {
     id 'com.android.application'
+<<<<<<< HEAD
     id 'org.jetbrains.kotlin.android'
+=======
+>>>>>>> origin/main
     
 }
 
@@ -23,7 +26,11 @@ android {
 
     buildTypes {
         release {
+<<<<<<< HEAD
             minifyEnabled false
+=======
+            minifyEnabled true
+>>>>>>> origin/main
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -32,20 +39,26 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+<<<<<<< HEAD
     
     kotlinOptions {
         jvmTarget = "17"
     }
+=======
+>>>>>>> origin/main
 
     buildFeatures {
         viewBinding true
         
     }
     
+<<<<<<< HEAD
     composeOptions {
         kotlinCompilerExtensionVersion = "2.0.0"
     }
     
+=======
+>>>>>>> origin/main
 }
 
 dependencies {
@@ -54,4 +67,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
      xmlns:android="http://schemas.android.com/apk/res/android"
@@ -347,3 +348,308 @@
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+=======
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<sound.wave.kilobyte.WavePlayerView
+			android:id="@+id/waveView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:layout_weight="1"
+			app:waveColor1="#ff8e8de5"
+			app:waveStrokeWidth1="5dp"
+			app:waveColor2="#ffe8d8fb"
+			app:waveStrokeWidth2="5dp"
+			app:waveSpeed="0.5"
+			app:wave2Visible="true" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/button2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="start listening"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+				<Button
+					android:id="@+id/button3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="stop listening"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/pick"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="pick file"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:textSize="12sp"
+					android:textColor="#ffffff"
+					android:hint="file path here"
+					android:textColorHint="#607D8B"
+					android:imeOptions="actionNext"
+					android:layout_weight="1" />
+				<Button
+					android:id="@+id/play_with_file_path"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="play with path"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+				<Button
+					android:id="@+id/play_from_app"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Play file from app"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<Button
+					android:id="@+id/stop"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="stop"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+				<Button
+					android:id="@+id/resume"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="resume"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+				<Button
+					android:id="@+id/pause"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="pause"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+				<EditText
+					android:id="@+id/edittext7"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="1.0"
+					android:textSize="12sp"
+					android:textColor="#ffffff"
+					android:hint="set Playback Speed"
+					android:textColorHint="#607D8B"
+					android:inputType="numberSigned|numberDecimal"
+					android:imeOptions="actionNext" />
+				<Button
+					android:id="@+id/button4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="set speed play"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/edittext2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="#ff8e8de5"
+					android:textSize="12sp"
+					android:textColor="#ffffff"
+					android:hint="Color wave 1"
+					android:textColorHint="#607D8B"
+					android:imeOptions="actionNext" />
+				<EditText
+					android:id="@+id/edittext3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="6.0"
+					android:textSize="12sp"
+					android:textColor="#ffffff"
+					android:hint="Stroke wave 1"
+					android:textColorHint="#607D8B"
+					android:inputType="numberSigned|numberDecimal"
+					android:imeOptions="actionNext" />
+				<EditText
+					android:id="@+id/edittext4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="#ffe8d8fb"
+					android:textSize="12sp"
+					android:textColor="#ffffff"
+					android:hint="Color wave 2"
+					android:textColorHint="#607D8B"
+					android:imeOptions="actionNext" />
+				<EditText
+					android:id="@+id/edittext5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="6.0"
+					android:textSize="12sp"
+					android:textColor="#ffffff"
+					android:hint="stroke wave 2"
+					android:textColorHint="#607D8B"
+					android:inputType="numberSigned|numberDecimal"
+					android:imeOptions="actionNext" />
+				<EditText
+					android:id="@+id/edittext6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="0.5"
+					android:textSize="12sp"
+					android:textColor="#ffffff"
+					android:hint="speed waves"
+					android:textColorHint="#607D8B"
+					android:inputType="numberSigned|numberDecimal"
+					android:imeOptions="actionNext" />
+				<Button
+					android:id="@+id/update"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="update waves"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/currentTimeTextView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="currentTimeTextView"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+				<SeekBar
+					android:id="@+id/progressbar1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:layout_weight="1" />
+				<TextView
+					android:id="@+id/durationTextView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="durationTextView"
+					android:textSize="12sp"
+					android:textColor="#ffffff" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/hide_wave2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="hide wave 2"
+				android:textSize="12sp"
+				android:textColor="#ffffff" />
+			<Button
+				android:id="@+id/show_wave2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="show wave 2"
+				android:textSize="12sp"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+>>>>>>> origin/main

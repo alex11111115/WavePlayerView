@@ -6,7 +6,11 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlHighlight">@color/colorControlHighlight</item>
         <item name="colorControlNormal">@color/colorControlNormal</item>
+<<<<<<< HEAD
         <item name="android:windowBackground">@color/backgroundColorDark</item>
+=======
+        <item name="android:windowBackground">@color/backgroundColor</item>
+>>>>>>> origin/main
     </style>
 
     <!-- الثيم النهاري -->

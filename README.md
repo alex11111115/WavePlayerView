@@ -234,4 +234,8 @@ We welcome contributions from the community! If you have ideas or improvements, 
 
 ## License
 
+<<<<<<< HEAD
 WavePlayerView is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
+=======
+WavePlayerView is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt).
+>>>>>>> origin/main

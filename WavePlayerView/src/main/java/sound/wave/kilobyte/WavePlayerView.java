@@ -1,8 +1,12 @@
 package sound.wave.kilobyte;
 
+<<<<<<< HEAD
 import android.Manifest;
 import android.animation.ValueAnimator;
 import android.app.Activity;
+=======
+import android.animation.ValueAnimator;
+>>>>>>> origin/main
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
@@ -24,6 +28,12 @@ import android.util.Log;
 import android.view.View;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+<<<<<<< HEAD
+=======
+import android.Manifest;
+import android.app.Activity;
+
+>>>>>>> origin/main
 import java.io.IOException;
 
 public class WavePlayerView extends View {
@@ -263,6 +273,13 @@ public class WavePlayerView extends View {
 		private void setupVisualizer() {
 				if (mediaPlayer != null && mediaPlayer.getAudioSessionId() != -1) {
 						
+<<<<<<< HEAD
+=======
+						//if (visualizer != null) {
+						//visualizer.release();
+						//}
+						
+>>>>>>> origin/main
 						try {
 								visualizer = new Visualizer(mediaPlayer.getAudioSessionId());
 								visualizer.setCaptureSize(Visualizer.getCaptureSizeRange()[1]);
@@ -425,7 +442,13 @@ public class WavePlayerView extends View {
 						audioRecord = null;
 				}
 		}
+<<<<<<< HEAD
 		public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+=======
+		//@Override
+		public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+				//super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+>>>>>>> origin/main
 				switch (requestCode) {
 						case REQUEST_RECORD_AUDIO_PERMISSION:
 						permissionToRecordAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
@@ -433,4 +456,8 @@ public class WavePlayerView extends View {
 				}
 				if (!permissionToRecordAccepted) ((Activity) getContext()).finish();
 		}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

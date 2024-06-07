@@ -4,8 +4,13 @@
 	<color name="colorAccent">#8E8DE5</color>
 	<color name="colorControlHighlight">#E8D8FB</color>
 	<color name="colorControlNormal">#9F9FF9</color>
+<<<<<<< HEAD
     <color name="backgroundColorDark">#222327</color>
     <color name="backgroundColorLight">#E8D8FB</color>
     <color name="textColorLight">#feb</color>
     <color name="textColorDark">#222327</color>
+=======
+    <color name="backgroundColor">#222327</color>
+    <color name="backgroundColorLight">#E8D8FB</color>
+>>>>>>> origin/main
 </resources>
