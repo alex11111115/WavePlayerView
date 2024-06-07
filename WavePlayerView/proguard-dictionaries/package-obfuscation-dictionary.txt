@@ -1,0 +1,3 @@
+com.example.a
+com.example.b
+com.example.c
