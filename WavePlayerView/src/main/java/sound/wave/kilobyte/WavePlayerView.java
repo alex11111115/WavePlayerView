@@ -2,6 +2,7 @@ package sound.wave.kilobyte;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -19,6 +20,11 @@ import android.os.Looper;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import android.Manifest;
+import android.app.Activity;
+
 import java.io.IOException;
 
 public class WavePlayerView extends View {
