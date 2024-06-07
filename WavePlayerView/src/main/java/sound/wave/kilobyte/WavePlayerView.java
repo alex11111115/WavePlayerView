@@ -44,9 +44,9 @@ public class WavePlayerView extends View {
 		private int bufferSize;
 		private static final int SAMPLE_RATE = 44100;
 		private String playbackSpeed = "1.0"; 
-	        private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
-                private boolean permissionToRecordAccepted = false;
-                private String[] permissions = {Manifest.permission.RECORD_AUDIO};
+		private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
+		private boolean permissionToRecordAccepted = false;
+		private String[] permissions = {Manifest.permission.RECORD_AUDIO};
 		
 		public WavePlayerView(Context context, AttributeSet attrs) {
 				super(context, attrs);
@@ -54,7 +54,7 @@ public class WavePlayerView extends View {
 		}
 		
 		private void init(Context context, AttributeSet attrs) {
-		        	ActivityCompat.requestPermissions((Activity) context, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
+				ActivityCompat.requestPermissions((Activity) context, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
 				TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.WaveView, 0, 0);
 				
 				int waveColor1 = a.getColor(R.styleable.WaveView_waveColor1, 0xFF8e8de5);
@@ -157,7 +157,7 @@ public class WavePlayerView extends View {
 		}
 		
 		public void playAudioWithWave(int audioResId) {
-			        
+				
 				release();
 				mediaPlayer = MediaPlayer.create(getContext(), audioResId);
 				if (mediaPlayer != null) {
@@ -384,16 +384,16 @@ public class WavePlayerView extends View {
 		public void startListening() {
 				release();
 				if (isRecording || isListening) return;
-
-			                if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
 				
-				bufferSize = AudioRecord.getMinBufferSize(SAMPLE_RATE, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
-				audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, SAMPLE_RATE, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, bufferSize);
-				audioRecord.startRecording();
-					} else {
-					// Handle the case where the permission is not granted
-					ActivityCompat.requestPermissions((Activity) getContext(), permissions, REQUEST_RECORD_AUDIO_PERMISSION);
-				        }
+				if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
+						
+						bufferSize = AudioRecord.getMinBufferSize(SAMPLE_RATE, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT);
+						audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, SAMPLE_RATE, AudioFormat.CHANNEL_IN_MONO, AudioFormat.ENCODING_PCM_16BIT, bufferSize);
+						audioRecord.startRecording();
+				} else {
+						// Handle the case where the permission is not granted
+						ActivityCompat.requestPermissions((Activity) getContext(), permissions, REQUEST_RECORD_AUDIO_PERMISSION);
+				}
 				isListening = true;
 				new Thread(() -> {
 						short[] buffer = new short[bufferSize];
@@ -424,14 +424,14 @@ public class WavePlayerView extends View {
 						audioRecord = null;
 				}
 		}
-	@Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        switch (requestCode) {
-            case REQUEST_RECORD_AUDIO_PERMISSION:
-                permissionToRecordAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
-                break;
-        }
-        if (!permissionToRecordAccepted) ((Activity) getContext()).finish();
-    }
+		@Override
+		public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+				super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+				switch (requestCode) {
+						case REQUEST_RECORD_AUDIO_PERMISSION:
+						permissionToRecordAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+						break;
+				}
+				if (!permissionToRecordAccepted) ((Activity) getContext()).finish();
+		}
 }
