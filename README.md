@@ -15,10 +15,13 @@ WavePlayerView is an advanced library for real-time sound analysis by recording 
 
 ## Screenshot
 
-![Screenshot_٢٠٢٤٠٦٠٥-١٠٢٤٥٠_Sound Wave Visualization](https://github.com/alex11111115/WavePlayerView/assets/96258291/5b185180-3fcf-4078-ba9c-75c9aa9c776f) ![Screenshot_٢٠٢٤٠٦٠٥-١٠٢٤١٨_Sound Wave Visualization](https://github.com/alex11111115/WavePlayerView/assets/96258291/b356224d-e6d7-4fd0-8a4b-16d778f859fc)
-![Screenshot_٢٠٢٤٠٦٠٥-١٤٥١٥٨_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/beaf3a5b-49b9-4487-b3f9-94cbeb1cb0d3) ![Screenshot_٢٠٢٤٠٦٠٥-١٤٥٢٠٢_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/3dd56ed2-d9d2-4baf-a337-b64df2c9e309)
+![Screenshot_٢٠٢٤٠٦٠٥-١٠٢٤٥٠_Sound Wave Visualization](https://github.com/alex11111115/WavePlayerView/assets/96258291/5b185180-3fcf-4078-ba9c-75c9aa9c776f) 
+![Screenshot_٢٠٢٤٠٦٠٥-١٠٢٤١٨_Sound Wave Visualization](https://github.com/alex11111115/WavePlayerView/assets/96258291/b356224d-e6d7-4fd0-8a4b-16d778f859fc)
+![Screenshot_٢٠٢٤٠٦٠٥-١٤٥١٥٨_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/beaf3a5b-49b9-4487-b3f9-94cbeb1cb0d3) 
+![Screenshot_٢٠٢٤٠٦٠٥-١٤٥٢٠٢_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/3dd56ed2-d9d2-4baf-a337-b64df2c9e309)
 ![Screenshot_٢٠٢٤٠٦٠٥-١٤٥٢٠٥_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/16ad97cd-128e-4483-93d7-fd80ab55246a)
 
+![Screenshot_٢٠٢٤٠٦٠٧-٠٩٢٣٠٢_WavePlayerView](https://github.com/alex11111115/WavePlayerView/assets/96258291/a6b7698b-751b-47ce-961d-33314c1c0795)
 
 ## Why Use WavePlayerView?
 
