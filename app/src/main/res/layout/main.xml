@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/_coordinator">
+
+    <com.google.android.material.appbar.AppBarLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:theme="@style/AppTheme.AppBarOverlay"
+         android:id="@+id/_app_bar">
+
+        <androidx.appcompat.widget.Toolbar
+             android:layout_height="?attr/actionBarSize"
+             android:layout_width="match_parent"
+             android:background="?attr/colorPrimary"
+             app:popupTheme="@style/AppTheme.PopupOverlay"
+             android:id="@+id/_toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+         android:orientation="vertical">
+
+        <sound.wave.kilobyte.WavePlayerView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:padding="8dp"
+             app:waveColor2="#ffe8d8fb"
+             android:orientation="horizontal"
+             app:waveColor1="#ff8e8de5"
+             android:layout_gravity="center_horizontal|center_vertical"
+             android:gravity="center_horizontal|center_vertical"
+             app:waveStrokeWidth2="5dp"
+             app:waveStrokeWidth1="5dp"
+             app:waveSpeed="0.5"
+             app:wave2Visible="true"
+             android:layout_weight="1"
+             android:id="@+id/waveView" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:padding="8dp"
+             android:orientation="vertical"
+             android:id="@+id/linear3">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_horizontal|center_vertical"
+                 android:padding="8dp"
+                 android:orientation="horizontal"
+                 android:id="@+id/linear9">
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/button2"
+                     android:text="start listening" />
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/button1"
+                     android:text="stop listening" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_vertical"
+                 android:padding="8dp"
+                 android:orientation="horizontal"
+                 android:id="@+id/linear7">
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/pick"
+                     android:text="pick file" />
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:imeOptions="actionNext"
+                     android:textColorHint="#607D8B"
+                     android:textColor="@color/textColorLight"
+                     android:hint="file path here"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:layout_weight="1"
+                     android:id="@+id/edittext1" />
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/play_with_file_path"
+                     android:text="play with path" />
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/play_from_app"
+                     android:text="Play file from app" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_horizontal|center_vertical"
+                 android:padding="8dp"
+                 android:orientation="horizontal"
+                 android:id="@+id/linear8">
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/stop"
+                     android:text="stop" />
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/resume"
+                     android:text="resume" />
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/pause"
+                     android:text="pause" />
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:imeOptions="actionNext"
+                     android:textColorHint="#607D8B"
+                     android:textColor="@color/textColorLight"
+                     android:hint="set Playback Speed"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:inputType="numberSigned|numberDecimal"
+                     android:id="@+id/edittext7"
+                     android:text="1.0" />
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/button4"
+                     android:text="set speed play" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="8dp"
+             android:orientation="vertical"
+             android:id="@+id/linear4">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_vertical"
+                 android:padding="8dp"
+                 android:orientation="horizontal"
+                 android:id="@+id/linear5">
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:imeOptions="actionNext"
+                     android:textColorHint="#607D8B"
+                     android:textColor="@color/textColorLight"
+                     android:hint="Color wave 1"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/edittext2"
+                     android:text="#ff8e8de5" />
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:imeOptions="actionNext"
+                     android:textColorHint="#607D8B"
+                     android:textColor="@color/textColorLight"
+                     android:hint="Stroke wave 1"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:inputType="numberSigned|numberDecimal"
+                     android:id="@+id/edittext3"
+                     android:text="6.0" />
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:imeOptions="actionNext"
+                     android:textColorHint="#607D8B"
+                     android:textColor="@color/textColorLight"
+                     android:hint="Color wave 2"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/edittext4"
+                     android:text="#ffe8d8fb" />
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:imeOptions="actionNext"
+                     android:textColorHint="#607D8B"
+                     android:textColor="@color/textColorLight"
+                     android:hint="stroke wave 2"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:inputType="numberSigned|numberDecimal"
+                     android:id="@+id/edittext5"
+                     android:text="6.0" />
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:imeOptions="actionNext"
+                     android:textColorHint="#607D8B"
+                     android:textColor="@color/textColorLight"
+                     android:hint="speed waves"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:inputType="numberSigned|numberDecimal"
+                     android:id="@+id/edittext6"
+                     android:text="0.5" />
+
+                <com.google.android.material.button.MaterialButton
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/update"
+                     android:text="update waves" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_vertical"
+                 android:padding="8dp"
+                 android:orientation="horizontal"
+                 android:id="@+id/linear6">
+
+                <com.google.android.material.textview.MaterialTextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/currentTimeTextView"
+                     android:text="currentTimeTextView" />
+
+                <SeekBar
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="8dp"
+                     android:layout_weight="1"
+                     android:id="@+id/progressbar1" />
+
+                <com.google.android.material.textview.MaterialTextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textColor="@color/textColorLight"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:id="@+id/durationTextView"
+                     android:text="durationTextView" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center_horizontal|center_vertical"
+             android:padding="8dp"
+             android:orientation="horizontal"
+             android:id="@+id/linear2">
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textColor="@color/textColorLight"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/hide_wave2"
+                 android:text="hide wave 2" />
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textColor="@color/textColorLight"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:id="@+id/show_wave2"
+                 android:text="show wave 2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

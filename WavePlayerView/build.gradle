@@ -1,0 +1,104 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+    id 'signing'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+        namespace "sound.wave.kilobyte"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        resources.excludes += [
+            'META-INF/DEPENDENCIES',
+            'META-INF/LICENSE',
+            'META-INF/LICENSE.txt',
+            'META-INF/license.txt',
+            'META-INF/NOTICE',
+            'META-INF/NOTICE.txt',
+            'META-INF/notice.txt',
+            'META-INF/ASL2.0'
+        ]
+    }
+}
+
+dependencies {
+    implementation "androidx.core:core-ktx:1.10.1"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "com.google.android.material:material:1.9.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            afterEvaluate {
+                from components.release
+            }
+            groupId = 'sound.wave.kilobyte'
+            artifactId = 'WavePlayerView'
+            version = '1.0'
+
+            pom {
+                name.set('WavePlayerView')
+                description.set('A Java library for analyzing sound directly by recording sound and plotting waves according to frequencies instantly. Do you think that\'s the only thing! No, on the contrary, there is also a drawing of waves according to an audio file from a track or from a file within the application.')
+                url.set('https://github.com/alex11111115/WavePlayerView')
+                licenses {
+                    license {
+                        name.set('The Apache License, Version 2.0')
+                        url.set('http://www.apache.org/licenses/LICENSE-2.0.txt')
+                    }
+                }
+                developers {
+                    developer {
+                        id.set('alex11111115')
+                        name.set('obieda')
+                        email.set('appsmarket55@gmail.com')
+                    }
+                }
+                scm {
+                    connection.set('scm:git:github.com/alex11111115/WavePlayerView.git')
+                    developerConnection.set('scm:git:ssh://github.com/alex11111115/WavePlayerView.git')
+                    url.set('https://github.com/alex11111115/WavePlayerView')
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name = 'sonatype'
+            url = uri('https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/')
+            credentials {
+                username = project.findProperty('ossrhUsername') ?: System.getenv('OSSRH_USERNAME')
+                password = project.findProperty('ossrhPassword') ?: System.getenv('OSSRH_PASSWORD')
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications.release
+}

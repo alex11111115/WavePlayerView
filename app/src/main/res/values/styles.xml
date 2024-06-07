@@ -1,0 +1,30 @@
+<resources>
+    <!-- الثيم الأساسي الليلي -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="android:windowBackground">@color/backgroundColorDark</item>
+    </style>
+
+    <!-- الثيم النهاري -->
+    <style name="AppTheme.Day" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="android:windowBackground">@color/backgroundColorLight</item>
+    </style>
+
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
+</resources>
