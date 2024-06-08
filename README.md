@@ -1,5 +1,5 @@
 
-[![StandWithPalestine](https://raw.githubusercontent.com/karim-eg/StandWithPalestine/main/assets/palestine_badge.svg)](https://github.com/karim-eg/StandWithPalestine)
+[![StandWithPalestine](https://raw.githubusercontent.com/karim-eg/StandWithPalestine/main/assets/palestine_badge.svg)](https://github.com/karim-eg/StandWithPalestine)   [![](https://jitpack.io/v/alex11111115/WavePlayerView.svg)](https://jitpack.io/#alex11111115/WavePlayerView)
 
 # WavePlayerView
 
@@ -37,7 +37,7 @@ Add the following to your project's `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation 'sound.wave.kilobyte:WavePlayerView:1.0'
+    implementation 'com.github.alex11111115:WavePlayerView:1.06'
 }
 ```
 
