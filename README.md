@@ -206,24 +206,14 @@ if (waveView != null) {
 
 WavePlayerView is developed and maintained by [alex11111115](https://github.com/alex11111115).
 
-## Contribution
+## Contribution ![GitHub contributors](https://img.shields.io/github/contributors/alex11111115/WavePlayerView?color=blue&style=flat-square)
 
 We welcome contributions from the community! If you have ideas or improvements, feel free to submit pull requests or open issues on the [GitHub repository](https://github.com/alex11111115/WavePlayerView). 
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks to these amazing people for their contributions:
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/alex11111115"><img src="https://avatars.githubusercontent.com/u/46741822?v=4" width="100px;" alt=""/><br /><sub><b>alex11111115</b></sub></a><br /><a href="#code-alex11111115" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/A0ks9"><img src="https://avatars.githubusercontent.com/u/11304855?v=4" width="100px;" alt=""/><br /><sub><b>A0ks9</b></sub></a><br /><a href="#code-A0ks9" title="Code">💻</a></td>
-  </tr>
-</table>
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- Embed contributors list -->
+[![Contributors](https://contrib.rocks/image?repo=alex11111115/WavePlayerView)](https://github.com/alex11111115/WavePlayerView/graphs/contributors)
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
