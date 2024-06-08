@@ -210,6 +210,23 @@ WavePlayerView is developed and maintained by [alex11111115](https://github.com/
 
 We welcome contributions from the community! If you have ideas or improvements, feel free to submit pull requests or open issues on the [GitHub repository](https://github.com/alex11111115/WavePlayerView). 
 
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/alex11111115"><img src="https://avatars.githubusercontent.com/u/46741822?v=4" width="100px;" alt=""/><br /><sub><b>alex11111115</b></sub></a><br /><a href="#code-alex11111115" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/A0ks9"><img src="https://avatars.githubusercontent.com/u/11304855?v=4" width="100px;" alt=""/><br /><sub><b>A0ks9</b></sub></a><br /><a href="#code-A0ks9" title="Code">💻</a></td>
+  </tr>
+</table>
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
+
 ## License
 
 WavePlayerView is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.txt). ![GitHub license](https://img.shields.io/github/license/alex11111115/WavePlayerView?style=flat&color=blue)
