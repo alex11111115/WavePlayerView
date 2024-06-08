@@ -254,4 +254,9 @@ WavePlayerView is licensed under the [Apache License 2.0](http://www.apache.org/
     <p>Build Status</p>
     <img src="https://img.shields.io/github/actions/workflow/status/alex11111115/WavePlayerView/ci.yml?style=flat&color=brightgreen" alt="Build Status">
   </div>
+
+  <div style="border: 1px solid #e1e4e8; border-radius: 5px; padding: 10px; width: 200px; text-align: center;">
+    <p>Views</p>
+    <img src="https://img.shields.io/github/watchers/alex11111115/WavePlayerView?style=social/ci.yml?style=flat&color=e8d8fb" alt="Views">
+  </div>
 </div>
