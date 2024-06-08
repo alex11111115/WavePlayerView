@@ -210,10 +210,7 @@ WavePlayerView is developed and maintained by [alex11111115](https://github.com/
 
 We welcome contributions from the community! If you have ideas or improvements, feel free to submit pull requests or open issues on the [GitHub repository](https://github.com/alex11111115/WavePlayerView). 
 
-Thanks to these amazing people for their contributions:
-
-<!-- Embed contributors list -->
-[![Contributors](https://contrib.rocks/image?repo=alex11111115/WavePlayerView)](https://github.com/alex11111115/WavePlayerView/graphs/contributors)
+Thanks to these amazing people for their contributions
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
