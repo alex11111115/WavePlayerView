@@ -59,17 +59,6 @@ publishing {
             groupId = 'sound.wave.kilobyte'
             artifactId = 'WavePlayerView'
             version = '1.0'
-        }
-    }
-}
-
-publishing {
-    publications {
-        release(MavenPublication) {
-            from components.release
-            groupId = 'sound.wave.kilobyte'
-            artifactId = 'WavePlayerView'
-            version = '1.0'
 
             pom {
                 name = 'WavePlayerView'
