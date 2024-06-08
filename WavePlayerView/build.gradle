@@ -63,6 +63,37 @@ publishing {
     }
 }
 
-signing {
-    sign publishing.publications.release
+publishing {
+    publications {
+        release(MavenPublication) {
+            from components.release
+            groupId = 'sound.wave.kilobyte'
+            artifactId = 'WavePlayerView'
+            version = '1.0'
+
+            pom {
+                name = 'WavePlayerView'
+                description = 'A Java library for analyzing sound directly by recording sound and plotting waves according to frequencies instantly.'
+                url = 'https://github.com/alex11111115/WavePlayerView'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'alex11111115'
+                        name = 'obieda'
+                        email = 'appsmarket55@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/alex11111115/WavePlayerView.git'
+                    developerConnection = 'scm:git:ssh://github.com/alex11111115/WavePlayerView.git'
+                    url = 'https://github.com/alex11111115/WavePlayerView'
+                }
+            }
+        }
+    }
 }
