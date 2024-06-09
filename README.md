@@ -31,7 +31,8 @@ WavePlayerView is an advanced library for real-time sound analysis by recording 
 
 ![Screenshot_٢٠٢٤٠٦٠٧-٠٩٢٣٠٢_WavePlayerView](https://github.com/alex11111115/WavePlayerView/assets/96258291/a6b7698b-751b-47ce-961d-33314c1c0795)
 
-## Why Use WavePlayerView?
+## Why Use WavePlayerView?  ![68747470733a2f2f6170692e636f646163792e636f6d2f70726f6a6563742f62616467652f47726164652f3136353766333032633330663437393738653762383233643164323863363439](https://github.com/alex11111115/WavePlayerView/assets/96258291/bdc69ed8-47b0-42a5-a418-802819291ec7)
+
 
 - **High Performance**: Engineered for high efficiency with minimal impact on your application's performance.
 - **Open Source**: Full access to source code for customization and enhancement.
