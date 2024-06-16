@@ -192,7 +192,7 @@ progressbar1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 > Add the following permissions to your `AndroidManifest.xml`:
 
 ```xml
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 ```
 
