@@ -6,13 +6,14 @@ plugins {
 
 android {
     compileSdk 34
+    namespace 'sound.wave.kilobyte.waveplayerview'
 
     defaultConfig {
         minSdk 21
         targetSdk 34
         versionCode 1
         versionName "1.11"
-        namespace "sound.wave.kilobyte"
+        namespace "sound.wave.kilobyte.waveplayerview"
     }
 
     buildTypes {
