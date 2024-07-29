@@ -23,9 +23,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="34"
-        android:usesCleartextTraffic="true"
-        android:extractNativeLibs="true"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        android:usesCleartextTraffic="true">
 
         <activity
             android:name=".MainActivity"
