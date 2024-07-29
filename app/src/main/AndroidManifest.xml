@@ -5,10 +5,7 @@
     android:versionCode="1"
     android:versionName="1.11"
     android:compileSdkVersion="34"
-    android:compileSdkVersionCodename="14"
-    platformBuildVersionCode="34"
-    platformBuildVersionName="14">
-
+    android:compileSdkVersionCodename="14">
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="34" />
