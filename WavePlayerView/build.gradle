@@ -1,0 +1,102 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+    id 'signing'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.11"
+        minSdkVersion "21"
+        targetSdkVersion "34"
+        namespace "sound.wave.kilobyte"
+    }
+
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    buildFeatures {
+        viewBinding true
+        //dataBinding true
+    }
+
+    packagingOptions {
+        resources {
+            excludes += [
+                'META-INF/DEPENDENCIES',
+                'META-INF/LICENSE',
+                'META-INF/LICENSE.txt',
+                'META-INF/license.txt',
+                'META-INF/NOTICE',
+                'META-INF/NOTICE.txt',
+                'META-INF/notice.txt',
+                'META-INF/ASL2.0'
+            ]
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            from components.findByName("release")
+            groupId = 'com.github.alex11111115'
+            artifactId = 'WavePlayerView'
+            version = '1.11'
+
+            pom {
+                name = 'WavePlayerView'
+                description = 'A Java library for analyzing sound directly by recording sound and plotting waves according to frequencies instantly.'
+                url = 'https://github.com/alex11111115/WavePlayerView'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'alex11111115'
+                        name = 'obieda'
+                        email = 'bodybody15151@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/alex11111115/WavePlayerView.git'
+                    developerConnection = 'scm:git:ssh://github.com/alex11111115/WavePlayerView.git'
+                    url = 'https://github.com/alex11111115/WavePlayerView'
+                }
+            }
+        }
+    }
+}
+
+signing {
+    sign publishing.publications
+}
