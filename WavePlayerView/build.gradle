@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.library'
     id 'maven-publish'
-    id 'signing'
 }
 
 android {
@@ -94,8 +93,4 @@ publishing {
             }
         }
     }
-}
-
-signing {
-    sign publishing.publications
 }
