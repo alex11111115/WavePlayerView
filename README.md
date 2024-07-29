@@ -231,7 +231,7 @@ if (waveView != null) {
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 ```
 
-##Important notes
+## Important notes
 
 - Be sure to request voice recording permissions at runtime for devices running Android 6.0 and above.
 - The appearance of the waves can be customized through various properties available in XML or programmatically.
