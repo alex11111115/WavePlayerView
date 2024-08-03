@@ -11,7 +11,7 @@
 <span style="font-size: 12px; color: #8E8DE5;"></span>
 </a></p>
 
-<p align="center">WavePlayerView: Analyze real-time audio and display sound waves in an interactive and engaging way 🎵</p>
+<p align="center">Analyze real-time audio and display sound waves in an interactive and engaging way 🎵</p>
 
 ## ✨ Features
 

@@ -1,32 +1,32 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/WavePlayerView/src/main/java/sound/wave/kilobyte/WavePlayerView.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/WavePlayerView/build.gradle",
       "selection": {
         "end": {
-          "column": 31,
-          "index": 11483,
-          "line": 328
+          "column": 65,
+          "index": 2791,
+          "line": 96
         },
         "start": {
-          "column": 31,
-          "index": 11483,
-          "line": 328
+          "column": 65,
+          "index": 2791,
+          "line": 96
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/app/src/main/java/sound/wave/kilobyte/MainActivity.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/build.gradle",
       "selection": {
         "end": {
-          "column": 38,
-          "index": 9093,
-          "line": 223
+          "column": 67,
+          "index": 273,
+          "line": 4
         },
         "start": {
-          "column": 38,
-          "index": 9093,
-          "line": 223
+          "column": 67,
+          "index": 273,
+          "line": 4
         }
       }
     },
@@ -34,32 +34,17 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/app/build.gradle",
       "selection": {
         "end": {
-          "column": 75,
-          "index": 357,
-          "line": 17
-        },
-        "start": {
-          "column": 75,
-          "index": 357,
-          "line": 17
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/WavePlayerView/build.gradle",
-      "selection": {
-        "end": {
           "column": 74,
-          "index": 1653,
-          "line": 64
+          "index": 1392,
+          "line": 56
         },
         "start": {
           "column": 74,
-          "index": 1653,
-          "line": 64
+          "index": 1392,
+          "line": 56
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/WavePlayerView/src/main/java/sound/wave/kilobyte/WavePlayerView.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/WavePlayerView/WavePlayerView/build.gradle"
 }
