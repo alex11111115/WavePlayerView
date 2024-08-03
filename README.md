@@ -6,39 +6,44 @@
 
 # WavePlayerView ![http://developer.android.com/index.html](https://github.com/alex11111115/WavePlayerView/assets/96258291/3fc4547a-a929-43c3-8cf0-ee16b066fb7e)
 
-<a href="https://github.com/alex11111115/WavePlayerView">
-  <img src="https://img.shields.io/badge/WavePlayerView-8E8DE5?style=flat&labelColor=E8D8FB&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwb2x5bGluZSBwb2ludHM9IjAsMjAgMTAsMTAgMjAsMjAgMzAsMTAgNDAsMjAgNTAsMTAgNjAsMjAgNzAsMTAgODAsMjAgOTAsMTAgMTAwLDIwIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojOEU4REU1O3N0cm9rZS13aWR0aDoyIiAvPjxwb2x5bGluZSBwb2ludHM9IjAsMjUgMTAsMTUgMjAsMjUgMzAsMTUgNDAsMjUgNTAsMTUgNjAsMjUgNzAsMTUgODAsMjUgOTAsMTUgMTAwLDI1IiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojOEU4REU1O3N0cm9rZS13aWR0aDoyIiAvPjwvc3ZnPg==" alt="WavePlayerView Logo" style="width: 180px; height: 28px; margin-right: 10px;">
-  <span style="font-size: 12px; color: #8E8DE5;"></span>
-</a>
+<p align="center"> <a href="https://github.com/alex11111115/WavePlayerView">
+  <img src="https://img.shields.io/badge/WavePlayerView-8E8DE5?style=flat&labelColor=E8D8FB&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTAwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGQ9Ik0gMCwyMCBDIDEwLDcuNSAyMCwyMCAzMCw3LjUgNDAsMjAgNTAsNy41IDYwLDIwIDcwLDcuNSA4MCwyMCA5MCw3LjUgMTAwLDIwIiBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojOEU4REU1O3N0cm9rZS13aWR0aDoqNztzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7IiAvPgogIDxwYXRoIGQ9Ik0gMCwyNSBDIDEwLDEyLjUgMjAsMjUgMzAsMTIuNSA0MCwyNSA1MCwxMi41IDYwLDI1IDcwLDEyLjUgODAsMjUgOTAsMTIuNSAxMDAsMjUiIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiM4RThERTU7c3Ryb2tlLXdpZHRoOjc7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kOyIgLz4KPC9zdmc+" alt="WavePlayerView Logo" style="width: 180px; height: 28px; margin-right: 10px;">
+<span style="font-size: 12px; color: #8E8DE5;"></span>
+</a></p>
 
-WavePlayerView is an advanced library for analyzing real-time audio and displaying sound waves in an engaging and interactive way.
+<p align="center">WavePlayerView: Analyze real-time audio and display sound waves in an interactive and engaging way 🎵</p>
 
-## Features
+## ✨ Features
 
-- **Real-time audio analysis**: View sound waves while recording or playing an audio file.
-- **Customize Display**: Easily adjust wave colors, line widths, and wave speeds.
-- **Easy-to-use Programming Interface**: Simple and intuitive programming interface for seamless integration.
-- **Wide Compatibility**: Supports Android API level 21 and above. [![API](https://img.shields.io/badge/API-21%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=21) 
-- **Advanced Control**: Playback speed control, pause/resume functions, and audio progress monitoring.
-- **Audio Recording**: Ability to record audio and display real-time waveforms.
-- **Volume Control**: Adjust the volume for the left and right channels.
-- **Repeat Playback**: Ability to set repeated playback of the audio file.
+- 🔊 **Real-time audio analysis**: View sound waves while recording or playing an audio file.
+- 🎨 **Customize Display**: Easily adjust wave colors, line widths, and wave speeds.
+- 🚀 **Easy-to-use Programming Interface**: Simple and intuitive programming interface for seamless integration.
+- 📱 **Wide Compatibility**: Supports Android API level 21 and above. [![API](https://img.shields.io/badge/API-21%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=21) 
+- 🎛️ **Advanced Control**: Playback speed control, pause/resume functions, and audio progress monitoring.
+- 🎙️ **Audio Recording**: Ability to record audio and display real-time waveforms.
+- 🔈 **Volume Control**: Adjust the volume for the left and right channels.
+- 🔁 **Repeat Playback**: Ability to set repeated playback of the audio file.
 
-## Screenshot
 
-![Screenshot_٢٠٢٤٠٦٠٥-١٠٢٤٥٠_Sound Wave Visualization](https://github.com/alex11111115/WavePlayerView/assets/96258291/5b185180-3fcf-4078-ba9c-75c9aa9c776f) 
-![Screenshot_٢٠٢٤٠٦٠٥-١٠٢٤١٨_Sound Wave Visualization](https://github.com/alex11111115/WavePlayerView/assets/96258291/b356224d-e6d7-4fd0-8a4b-16d778f859fc)
-![Screenshot_٢٠٢٤٠٦٠٥-١٤٥١٥٨_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/beaf3a5b-49b9-4487-b3f9-94cbeb1cb0d3) 
-![Screenshot_٢٠٢٤٠٦٠٥-١٤٥٢٠٢_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/3dd56ed2-d9d2-4baf-a337-b64df2c9e309)
-![Screenshot_٢٠٢٤٠٦٠٥-١٤٥٢٠٥_Wave Player](https://github.com/alex11111115/WavePlayerView/assets/96258291/16ad97cd-128e-4483-93d7-fd80ab55246a)
+## 🤔 Why use WavePlayerView?
 
-![Screenshot_٢٠٢٤٠٦٠٧-٠٩٢٣٠٢_WavePlayerView](https://github.com/alex11111115/WavePlayerView/assets/96258291/a6b7698b-751b-47ce-961d-33314c1c0795)
+- 🚀 **High Performance**: Designed for high efficiency with minimal impact on your app's performance.
+- 🔓 **Open Source**: Full access to the source code for customization and optimization.
+- 👥 **Community Support**: Supported by a dedicated community, with opportunities for contributions and improvements.
+- 🎠 **Highly Smooth**: Utilizes the latest and most powerful algorithms to deliver an impressive and smooth result
 
-## Why Use WavePlayerView?
+## 📸 Screenshots
 
-- **High Performance**: Engineered for high efficiency with minimal impact on your application's performance.
-- **Open Source**: Full access to source code for customization and enhancement.
-- **Community Support**: Supported by a dedicated community, with opportunities for contributions and improvements.
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٢٥٢_WavePlayerView](https://github.com/user-attachments/assets/d9b204e2-01a5-4bc4-bee0-66d410f23378)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٣٠٥_WavePlayerView](https://github.com/user-attachments/assets/f0b844a8-9358-440c-8840-d566b182fc1e)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٣١٠_WavePlayerView](https://github.com/user-attachments/assets/90a1e819-963c-4b2a-a302-ba45c3a30969)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٣١٨_WavePlayerView](https://github.com/user-attachments/assets/53c96220-8cd5-4240-92af-1d1459e57904)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٦٤٦_WavePlayerView](https://github.com/user-attachments/assets/b2109d91-62d2-4c53-88b4-7a81e4b944a9)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٦٥٠_WavePlayerView](https://github.com/user-attachments/assets/cae5b3d2-d96b-485a-946c-15129fe71b15)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٧٠١_WavePlayerView](https://github.com/user-attachments/assets/db77a4b7-115e-4a32-8624-d2a651a00dd2)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٧١٢_WavePlayerView](https://github.com/user-attachments/assets/093aa667-38cf-4218-a2f5-0c408ea943d0)
+![Screenshot_٢٠٢٤٠٨٠٣-١٤٠٧١٩_WavePlayerView](https://github.com/user-attachments/assets/681192a2-a8fd-49e3-9a22-75218fc9e5bf)
+
 
 ## How to Use the Library? ![GitHub top language](https://img.shields.io/github/languages/top/alex11111115/WavePlayerView?style=flat&color=red)
 
@@ -242,13 +247,14 @@ waveView.setLooping(true);
 if (waveView != null) {
   waveView.release();
 }
+```
 
-> To Wave1 Alpha
+> To set wave1 alpha
 ```java
 waveView.setWave1Alpha(alpha1);
 ```
 
-> To Wave2 Alpha
+> To set wave2 alpha
 ```java
 waveView.setWave2Alpha(alpha2);
 ```
@@ -258,15 +264,14 @@ waveView.setWave2Alpha(alpha2);
 > Add the following permissions to your `AndroidManifest.xml`:
 
 ```xml
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.RECORD_AUDIO" />
 ```
 
-## Important notes
+## 📝 Important Notes
 
-- Be sure to request voice recording permissions at runtime for devices running Android 6.0 and above.
+- Be sure to ask for audio recording permissions at runtime for devices running Android 6.0 and above.
 - The appearance of the waves can be customized through various properties available in XML or programmatically.
-- Use `setPlaybackSpeed()' to change the playback speed. Allowable values range from 0.2 to 6.0.
+- Use `setPlaybackSpeed()` to change the playback speed. Allowable values range from 0.2 to 6.0.
 - You can control the volume with `setVolume()` where the values range from 0.0 (mute) to 1.0 (loudest).
 - Use `setLooping()` to set whether the sound will automatically repeat after it ends.
 

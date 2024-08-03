@@ -312,6 +312,7 @@ public class WavePlayerView extends View {
 	public void resumeAudioWithWave() {
     if (mediaPlayer != null && isPaused) {
         mediaPlayer.seekTo(pausedPosition);
+        setupMediaPlayer();    
         setPlaybackSpeed(playbackSpeed);
         mediaPlayer.start();
         isPaused = false;
@@ -325,6 +326,7 @@ public class WavePlayerView extends View {
 	public void seekToPosition(int pos) {
 		if (mediaPlayer != null && isPaused) {
 			mediaPlayer.seekTo(pos);
+            setupMediaPlayer();
 			setPlaybackSpeed(playbackSpeed); 
 			mediaPlayer.start();
 			isPaused = false;

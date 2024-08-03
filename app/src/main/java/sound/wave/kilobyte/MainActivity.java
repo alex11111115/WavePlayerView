@@ -32,6 +32,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -95,12 +96,12 @@ public class MainActivity extends AppCompatActivity {
         permissionLauncher = registerForActivityResult(
                 new ActivityResultContracts.RequestMultiplePermissions(),
                 result -> {
-                    boolean allGranted = result.entrySet().stream()
-                            .allMatch(entry -> entry.getValue());
-                    if (allGranted) {
-                        initializeLogic();
-                    } else {
-                        Toast.makeText(this, "الصلاحيات مطلوبة لتشغيل التطبيق بشكل صحيح", Toast.LENGTH_LONG).show();
+                    boolean allGranted = true;
+                    for (Map.Entry<String, Boolean> entry : result.entrySet()) {
+                        if (!entry.getValue()) {
+                            allGranted = false;
+                            break;
+                        }
                     }
                 }
         );
@@ -219,6 +220,8 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
             public void onStopTrackingTouch(SeekBar seekBar) {
                 waveView.seekToPosition((int) seekPosition);
                 waveView.resumeAudioWithWave();
+                setupAudioPlayer();
+                updatePlaybackSpeed();
             }
         });
 
@@ -327,6 +330,7 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
 
     private void resumeAudio() {
         waveView.resumeAudioWithWave();
+        setupAudioPlayer();
         updatePlaybackSpeed();
     }
 
