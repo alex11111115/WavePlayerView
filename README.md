@@ -171,6 +171,16 @@ waveView.setPlaybackSpeed("1.5");
 waveView.setWaveProperties(color1, wave1Width, color2, wave2Width, waveSpeed);
 ```
 
+> To set wave1 alpha
+```java
+waveView.setWave1Alpha(alpha1);
+```
+
+> To set wave2 alpha
+```java
+waveView.setWave2Alpha(alpha2);
+```
+
 > To control the visibility of the second wave:
 ```java
 // Hide the second wave
@@ -247,16 +257,6 @@ waveView.setLooping(true);
 if (waveView != null) {
   waveView.release();
 }
-```
-
-> To set wave1 alpha
-```java
-waveView.setWave1Alpha(alpha1);
-```
-
-> To set wave2 alpha
-```java
-waveView.setWave2Alpha(alpha2);
 ```
 
 ### Permissions
