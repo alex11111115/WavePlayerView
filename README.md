@@ -45,14 +45,14 @@ WavePlayerView is an advanced library for analyzing real-time audio and displayi
 ### 1. Add it in your root build.gradle at the end of repositories:
 
 ```gradle
-	dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-            //...
-			maven { url 'https://jitpack.io' }
-		}
+dependencyResolutionManagement {
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+		mavenCentral()
+        //...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 
 ### 2. Add the Library to Your Project
@@ -61,7 +61,7 @@ WavePlayerView is an advanced library for analyzing real-time audio and displayi
 
 ```gradle
 dependencies {
-    implementation 'com.github.alex11111115:WavePlayerView:1.11'
+    implementation 'com.github.alex11111115:WavePlayerView:1.12'
 }
 ```
 
@@ -89,6 +89,28 @@ dependencies {
 ### 4. Control the Waves from Your Code
 
 > In your `MainActivity.java` file, you can control the `WavePlayerView` as follows:
+
+> To start using it, you need to initialize it first
+```java
+public class MainActivity extends AppCompatActivity {
+
+    private WavePlayerView waveView;
+    
+    //....
+
+    @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+        
+        waveView = findViewById(R.id.waveView);
+        
+        //.....
+        
+    }
+}
+```
+
 
 > To play from file path:
 ```java
@@ -220,6 +242,15 @@ waveView.setLooping(true);
 if (waveView != null) {
   waveView.release();
 }
+
+> To Wave1 Alpha
+```java
+waveView.setWave1Alpha(alpha1);
+```
+
+> To Wave2 Alpha
+```java
+waveView.setWave2Alpha(alpha2);
 ```
 
 ### Permissions

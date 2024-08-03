@@ -186,6 +186,16 @@
                      android:id="@+id/button4"
                      android:text="set speed play" />
 
+                <com.google.android.material.textview.MaterialTextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:padding="8dp"
+                     android:textSize="12sp"
+                     android:textColor="@color/textColorLight"
+                     android:layout_gravity="center_horizontal"
+                     android:id="@+id/speedTextView"
+                     android:text="1.0x" />
+
             </LinearLayout>
 
         </LinearLayout>
@@ -367,25 +377,71 @@
                  android:id="@+id/volumeTxt"
                  android:text="100" />
 
+            <SeekBar
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:max="100"
+                 android:padding="8dp"
+                 android:progress="100"
+                 android:id="@+id/volumeSeekBar" />
+
         </LinearLayout>
 
-        <SeekBar
+        <LinearLayout
              android:layout_height="wrap_content"
              android:layout_width="match_parent"
-             android:max="100"
+             android:gravity="center_horizontal|center_vertical"
              android:padding="8dp"
-             android:progress="100"
-             android:id="@+id/volumeSeekBar" />
+             android:orientation="horizontal"
+             android:id="@+id/linear21">
 
-        <com.google.android.material.textview.MaterialTextView
-             android:layout_height="wrap_content"
-             android:layout_width="wrap_content"
-             android:padding="8dp"
-             android:textSize="12sp"
-             android:textColor="@color/textColorLight"
-             android:layout_gravity="center_horizontal"
-             android:id="@+id/speedTextView"
-             android:text="1.0x" />
+            <EditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:imeOptions="actionNext"
+                 android:hint="alpha wave1"
+                 android:padding="8dp"
+                 android:textColorHint="#607D8B"
+                 android:textSize="12sp"
+                 android:textColor="@color/textColorLight"
+                 android:layout_weight="1"
+                 android:inputType="numberSigned|numberDecimal"
+                 android:id="@+id/edittext8"
+                 android:text="1" />
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:textColor="@color/textColorLight"
+                 android:id="@+id/setAlpha1"
+                 android:text="update alpha wave1" />
+
+            <EditText
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:imeOptions="actionNext"
+                 android:hint="alpha wave2"
+                 android:padding="8dp"
+                 android:textColorHint="#607D8B"
+                 android:textSize="12sp"
+                 android:textColor="@color/textColorLight"
+                 android:layout_weight="1"
+                 android:inputType="numberSigned|numberDecimal"
+                 android:id="@+id/edittext9"
+                 android:text="1" />
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:padding="8dp"
+                 android:textSize="12sp"
+                 android:textColor="@color/textColorLight"
+                 android:id="@+id/setAlpha2"
+                 android:text="update alpha wave2" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
